@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    
+}
+html{
+    width: auto;
+
+}
+body{
+    background-image: url(./image/biere.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+   
+}
+header{
+    text-align: center;
+    color: rgb(238, 238, 126);
+    background-color: rgba(245, 245, 245, 0.705);
+}
+main{
+    
+    text-align: center;
+   
+    height: 100vh;
+}
+h2{width: 210px;
+    margin: auto;
+    background-color: rgba(245, 245, 245, 0.363);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  color: rgb(0, 0, 0); 
+}
+div{
+    
+    background-color: rgba(245, 245, 245, 0.815);
+    width: 200px;
+    margin: auto;
+    height: auto;
+    padding: 10px;
+}
+
+p{ margin: 5px;
+    
+}
+button{
+    margin: 10px;
+}

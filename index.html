@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinderBeer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>TinderBeer</h1>
+    </header>
+    <main>
+        <h2>Qui etes vous ?</h2>
+        <form action="https://bio-nature.org/greta/formulaire.php" methode="POST"
+         >
+         <div class="civiliter">
+         <label for="civiliter">
+            <input type="radio" name="civiliter" value="mr"> Mr
+            <input type="radio" name="civiliter" value="mme">Mme
+            <input type="radio" name="civiliter" value="Autre"> Autre
+         </label>
+        </div>
+        <div class="information">
+            <label for="nom">
+               <p>Votre Nom</p> <input type="text" name="nom" placeholder="Bière">
+            </label>
+            <label for="prenom">
+               <p> Votre prénom</p> <input type="text" name="prenom" placeholder="Ambrée">
+            </label>
+            <label for="age">
+                <p>Votre âge</p><input type="number" name="age" min="18" max="100">
+            </label>
+            <label for="email">
+              <p>Votre email </p>  <input type="email" name="email" value="email">
+            </label>
+        </div>
+        <div class="biere">
+            <label for="couleur">
+               <p>La quelle preferez-vous ? </p>
+                <select name="couleur" id="couleur">
+                    <option value="ambree"> Ambrées</option>
+                    <option value="blonde">Blondes</option>
+                    <option value="blanche">Blanches</option>
+                    <option value="brune">Brunes</option>
+                </select>
+            </label>
+            <label for="fermentation">
+              <p> Votre fermentation préferée? (basse/haute/spontanée)</p> 
+                <input type="range" min="1" max="3">
+
+            </label>
+            <label for="style">
+              <p> Votre style de bière?</p>
+                <input type="checkbox" name="style" id="style"> IPA
+                <input type="checkbox" name="style" id="style"> Stout
+                <input type="checkbox" name="style" id="style"> Triple
+                <input type="checkbox" name="style" id="style"> Sour  
+                <input type="checkbox" name="style" id="autre"> Autre     
+            </label>
+        </div>
+        <div class="rencontre">
+          <form action="date"> 
+           <p> Quand veux-tu rencontrer ta bière?</p>
+            <input type="date" name="date" value="date">
+        </form> 
+       <p> A quelle heure?</p>
+           <form action="time"> 
+            <input type="time" value="time">
+        </form>
+            <button type="submit"> C'est partie !</button>
+        </div>
+        </form>
+    </main>
+    
+</body>
+</html>
