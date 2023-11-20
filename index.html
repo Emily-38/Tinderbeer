@@ -32,7 +32,7 @@
                 <p>Votre âge</p><input type="number" name="age" min="18" max="100">
             </label>
             <label for="email">
-              <p>Votre email </p>  <input type="email" name="email" value="email">
+              <p>Votre email </p>  <input type="email" name="email" value="email" placeholder="binouse@glouglou.com">
             </label>
         </div>
         <div class="biere">
@@ -47,29 +47,32 @@
             </label>
             <label for="fermentation">
               <p> Votre fermentation préferée? (basse/haute/spontanée)</p> 
-                <input type="range" min="1" max="3">
+                <input  name="fermentation" type="range" min="1" max="3">
 
             </label>
             <label for="style">
               <p> Votre style de bière?</p>
-                <input type="checkbox" name="style" id="style"> IPA
-                <input type="checkbox" name="style" id="style"> Stout
-                <input type="checkbox" name="style" id="style"> Triple
-                <input type="checkbox" name="style" id="style"> Sour  
-                <input type="checkbox" name="style" id="autre"> Autre     
-            </label>
+              
+              <label for="ipa">
+                <input type="checkbox" name="style" id="ipa" value="ipa"> IPA</label>
+              <label for="stout">  <input type="checkbox" name="style" id="stout" value="stout"> Stout
+               </label><label for="triple"><input type="checkbox" name="style" id="triple" value="triple"> Triple
+               </label> <label for="sour"><input type="checkbox" name="style" id="sour" value="sour"> Sour  
+               </label> <label for="autre"><input type="checkbox" name="style" id="autre" value="autre"> Autre     
+            </label> </label>
         </div>
         <div class="rencontre">
-          <form action="date"> 
+          <label for="date"> 
            <p> Quand veux-tu rencontrer ta bière?</p>
             <input type="date" name="date" value="date">
-        </form> 
+          </label> 
+         <label for="time">
        <p> A quelle heure?</p>
-           <form action="time"> 
-            <input type="time" value="time">
-        </form>
+           
+            <input type="time" name="time"value="time">
+        </label></div>
             <button type="submit"> C'est partie !</button>
-        </div>
+        
         </form>
     </main>
     
